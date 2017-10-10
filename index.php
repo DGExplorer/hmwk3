@@ -1,5 +1,3 @@
-<h1>
-Hello</h1>
 <?php
 $textInput = 'Words';
 $obj = new main();
@@ -14,7 +12,7 @@ class main(){
   echo 'Hello PHP!';
  }
 
-public function printString($text) {
+public function printString($textInput) {
   
   echo'<h1>Print function example</h1>';
   echo 'Print: ';
@@ -31,11 +29,11 @@ echo '<hr>';
 	
 }
 
-public function stringLength($text) {
+public function stringLength($textInput) {
 	
  echo '<h1>String Length function example</h1>';
  echo 'Print; ';
- $length = strlen($text);
+ $length = strlen($textInput);
  echo 'The length of this string is: ' . $length;
  echo '<hr>';
 
@@ -43,11 +41,10 @@ public function stringLength($text) {
 
 public funtion count($num) {
 	echo<h1>Array Count function<h/1>';
-	echo count($num);
+	echo 'count($num) ';
     echo '<hr>'; 
 	
 }
-
 
 
 public function __destruct() {
