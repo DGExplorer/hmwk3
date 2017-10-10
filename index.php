@@ -3,10 +3,10 @@ Hello</h1>
 <?php
 $textInput = 'Words';
 $obj = new main();
-$num=array('2', '4', '6', '8');
+$num = array('2', '4', '6', '8');
 $obj->printString($textInput);
 $obj->stringLength($textInput);
-$obj->arraylength ($num);
+$obj->arraylength($num);
 
 class main(){
   public function __construct() {
@@ -40,6 +40,15 @@ public function stringLength($text) {
  echo '<hr>';
 
 }
+
+public funtion count($num) {
+	echo<h1>Array Count function<h/1>';
+	echo count($num);
+    echo '<hr>'; 
+	
+}
+
+
 
 public function __destruct() {
 
