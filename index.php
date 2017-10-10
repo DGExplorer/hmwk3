@@ -14,7 +14,7 @@ class main(){
 
 public function printString($textInput) {
   
-  echo'<h1>Print function example</h1>';
+  echo '<h1>Print function example</h1>';
   echo 'Print: ';
   print($text);
   echo '<hr>';
@@ -22,7 +22,7 @@ public function printString($textInput) {
 }
 
 public function arraylength($num) {
-echo'<h1>Array print function</h1>';
+echo '<h1>Array print function</h1>';
 echo 'Print: ';
 print_r($num);
 echo '<hr>';	
@@ -40,7 +40,7 @@ public function stringLength($textInput) {
 }
 
 public funtion count($num) {
-	echo<h1>Array Count function<h/1>';
+	echo <h1>Array Count function<h/1>';
 	echo 'count($num) ';
     echo '<hr>'; 
 	
