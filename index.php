@@ -32,7 +32,7 @@ echo '<hr>';
 public function stringLength($textInput) {
 	
  echo '<h1>String Length function example</h1>';
- echo 'Print; ';
+ echo 'Print: ';
  $length = strlen($textInput);
  echo 'The length of this string is: ' . $length;
  echo '<hr>';
@@ -41,11 +41,11 @@ public function stringLength($textInput) {
 
 public funtion count($num) {
 	echo <h1>Array Count function<h/1>';
+	echo 'Print: ';
 	echo 'count($num) ';
     echo '<hr>'; 
 	
 }
-
 
 public function __destruct() {
 
