@@ -5,9 +5,11 @@ error_reporting(E_ALL);
 $textInput = 'Words';
 $obj = new main();
 $num = array('2', '4', '6', '8');
+$books = array('title', 'content', 'author');
 $obj->printString($textInput);
 $obj->stringLength($textInput);
 $obj->arraylength($num);
+$obj->printCount($books);
 
 class main {
   public function __construct() {
@@ -42,10 +44,10 @@ public function stringLength($textInput) {
 
 }
 
-public function count($textInput) {
+public function count($books) {
 	echo '<h1>Array Count function<h/1>';
 	echo 'Print: ';
-	echo 'count($num) ';
+	echo count($books);
     echo '<hr>'; 
 	
 }
