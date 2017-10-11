@@ -1,5 +1,6 @@
 <?php
-php -l
+ini_set
+error_reporting
 
 $textInput = 'Words';
 $obj = new main();
