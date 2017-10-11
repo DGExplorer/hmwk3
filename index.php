@@ -1,4 +1,6 @@
 <?php
+php -l
+
 $textInput = 'Words';
 $obj = new main();
 $num = array('2', '4', '6', '8');
