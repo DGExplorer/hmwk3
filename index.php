@@ -16,7 +16,7 @@ public function printString($textInput) {
   
   echo '<h1>Print function example</h1>';
   echo 'Print: ';
-  print($text);
+  print($textInput);
   echo '<hr>';
 
 }
