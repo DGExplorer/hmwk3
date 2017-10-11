@@ -39,8 +39,8 @@ public function stringLength($textInput) {
 
 }
 
-public funtion count($num) {
-	echo <h1>Array Count function<h/1>';
+public function count($num) {
+	echo '<h1>Array Count function<h/1>';
 	echo 'Print: ';
 	echo 'count($num) ';
     echo '<hr>'; 
@@ -49,12 +49,9 @@ public funtion count($num) {
 
 public function __destruct() {
 
-
 }
 
 }
-
-
 
 ?>
 
