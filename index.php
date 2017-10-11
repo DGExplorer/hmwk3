@@ -1,6 +1,6 @@
 <?php
-ini_set
-error_reporting
+ini_set('display_errors','On');
+error_reporting(E_ALL);
 
 $textInput = 'Words';
 $obj = new main();
