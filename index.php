@@ -24,7 +24,7 @@ public function printString($textInput) {
 
 }
 
-public function arraylength($num) {
+public function arrayLength($num) {
 echo '<h1>Array print function</h1>';
 echo 'Print: ';
 print_r($num);
@@ -42,7 +42,7 @@ public function stringLength($textInput) {
 
 }
 
-public function count($num) {
+public function count($textInput) {
 	echo '<h1>Array Count function<h/1>';
 	echo 'Print: ';
 	echo 'count($num) ';
