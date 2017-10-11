@@ -9,7 +9,7 @@ $obj->printString($textInput);
 $obj->stringLength($textInput);
 $obj->arraylength($num);
 
-class main(){
+class main {
   public function __construct() {
   
   echo 'Hello PHP!';
