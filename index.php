@@ -5,11 +5,13 @@ error_reporting(E_ALL);
 $textInput = 'Words';
 $obj = new main();
 $num = array('2', '4', '6', '8');
+$sum = array_sum($num);
 $books = array('title', 'content', 'author');
 $dog = <<<WALKERS
 'There are not enough treats for canines!'
 WALKERS;
-$comment = "This is a\multi-line string.";
+$comment = "This is a\nmulti-line string.";
+
 
 $obj->printString($textInput);
 $obj->stringLength($textInput);
@@ -18,6 +20,7 @@ $obj->printCount($books);
 $obj->stringHeredoc ($dog);
 $obj->arrayAddValue ($num);
 $obj->stringMultiLine ($comment);
+$obj->arrayAddAllValues ($sum)
  
 class main {
   public function __construct() {
@@ -79,11 +82,18 @@ public function arrayAddValue ($num) {
 public function stringMultiLine ($comment) {
 	echo '<h1>String MultiLine function</h1>';
 	echo 'Print: ';
-	echo 'This string uses the backlash: ' . $comment;
+	echo 'This string uses the escape sequence: ' . $comment;
 	echo '<hr>';
+}
+	
+public function arrayAddAllValues ($sum)   {
+	echo '<h1>Array  function</h1>';
+	echo 'Print: ';
+	echo 'This array adds all values: ' . $sum;
+	echo '<hr>';
+}
 
-{
-		
+	
 public function __destruct() {
 
 }
