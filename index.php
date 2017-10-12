@@ -6,7 +6,7 @@ $textInput = 'Words';
 $obj = new main();
 $num = array('2', '4', '6', '8');
 $books = array('title', 'content', 'author');
-$dog = <<<WALKERS 
+$dog = <<<WALKERS
 'There are not enough treats for canines!'
 WALKERS;
 $obj->printString($textInput);
