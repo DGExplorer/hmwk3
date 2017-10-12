@@ -59,7 +59,7 @@ public function printCount($books) {
 public function stringHeredoc ($dog){
 	echo '<h1>String Heredoc function</h1>';
 	echo 'Print: ';
-	echo 'This array uses <<< as heredoc: '; $dog
+	echo 'This array uses <<< as heredoc: ' . $dog;
 	echo $dog;
 	echo '<hr>';
 	
