@@ -6,14 +6,14 @@ $textInput = 'Words';
 $obj = new main();
 $num = array('2', '4', '6', '8');
 $books = array('title', 'content', 'author');
+$dog = <<<WALKERS 
+'There are not enough treats for canines!'
+WALKERS;
 $obj->printString($textInput);
 $obj->stringLength($textInput);
 $obj->arraylength($num);
 $obj->printCount($books);
-$dog = <<<WALKERS 
-'There are not enough treats for canines!'
-WALKERS; 
-
+ 
 class main {
   public function __construct() {
   
