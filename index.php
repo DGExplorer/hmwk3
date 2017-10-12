@@ -44,7 +44,7 @@ public function stringLength($textInput) {
 
 }
 
-public function count($books) {
+public function printCount($books) {
 	echo '<h1>Array Count function<h/1>';
 	echo 'Print: ';
 	$count = count($books);
