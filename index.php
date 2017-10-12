@@ -9,10 +9,15 @@ $books = array('title', 'content', 'author');
 $dog = <<<WALKERS
 'There are not enough treats for canines!'
 WALKERS;
+$comment = "This is a \multi-line string.";
+
 $obj->printString($textInput);
 $obj->stringLength($textInput);
 $obj->arraylength($num);
 $obj->printCount($books);
+$obj->stringHeredoc ($dog);
+$obj->arrayAddValue ($num);
+$obj->stringMultiLine ($comment);
  
 class main {
   public function __construct() {
@@ -59,10 +64,24 @@ public function printCount($books) {
 public function stringHeredoc ($dog){
 	echo '<h1>String Heredoc function</h1>';
 	echo 'Print: ';
-	echo 'This array uses heredoc: ' . WALKERS;
+	echo 'This array uses heredoc: ' . $dog;
 	echo '<hr>';
 	
 }
+
+public function arrayAddValue ($num) {
+	echo '<h1>Array Add Value function</h1>';
+	echo 'Print: ';
+	echo 'This array uses brackets: ' . $num [] = '10';
+	echo '<hr>';
+}
+
+public function stringMultiLine ($comment) {
+	echo '<h1>String MultiLine function</h1>';
+	echo 'Print: ';
+	echo 'This string uses the backlash: ' . $comment;
+	echo '<hr>';
+
 
 
 public function __destruct() {
