@@ -9,7 +9,7 @@ $books = array('title', 'content', 'author');
 $dog = <<<WALKERS
 'There are not enough treats for canines!'
 WALKERS;
-$comment = "This is a \multi-line string.";
+$comment = "This is a\multi-line string.";
 
 $obj->printString($textInput);
 $obj->stringLength($textInput);
@@ -82,8 +82,8 @@ public function stringMultiLine ($comment) {
 	echo 'This string uses the backlash: ' . $comment;
 	echo '<hr>';
 
-
-
+{
+		
 public function __destruct() {
 
 }
