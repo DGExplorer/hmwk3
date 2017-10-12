@@ -10,6 +10,7 @@ $obj->printString($textInput);
 $obj->stringLength($textInput);
 $obj->arraylength($num);
 $obj->printCount($books);
+$dog = <<<WALKERS 
 
 class main {
   public function __construct() {
@@ -45,13 +46,23 @@ public function stringLength($textInput) {
 }
 
 public function printCount($books) {
-	echo '<h1>Array Count function<h/1>';
+	echo '<h1>Array Count function</h1>';
 	echo 'Print: ';
 	$count = count($books);
 	echo 'The count of the array is: ' . $count;
     echo '<hr>'; 
 	
 }
+
+public function stringHeredoc ($dog){
+	echo '<h1>String Heredoc function</h1>';
+	echo 'Print: ';
+	There are no $textInput for dog WALKERS;
+	echo 'This array uses <<< as heredoc: ' . $dog;
+	echo '<hr>';
+	
+}
+
 
 public function __destruct() {
 
