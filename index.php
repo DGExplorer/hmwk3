@@ -14,9 +14,9 @@ $comment = "This is a\nmulti-line string.";
 $odd = 16;
 $name = 'President Abraham Lincoln';
 $names = array('first' => 'Abraham', 'last' => 'Lincoln');
-$nom = range(2, 2);
+$nom = range(1, 7);
 $name = lcfirst($name);
-$dig = array_fill(0, 4, 9);
+$abc = array_fill(1, 4, 9);
 
 $obj->printString($textInput);
 $obj->stringLength($textInput);
@@ -35,7 +35,7 @@ $obj->arrayRange ($nom);
 $obj->stringLower ($name);
 $obj->arraySort ($books);
 $obj->stringExpo ($odd);
-$obj->arrayFill ($dig);
+$obj->arrayFill ($abc);
  
 class main {
 
@@ -153,7 +153,7 @@ public function stringSubstring ($name) {
 public function arrayRange ($nom) {
 	echo '<h1>Array Range Values function</h1>';
 	echo 'Print: ';
-	echo 'This array has a range of values: ' . $nom = range(2, 2);
+	echo 'This array has a range of values: ' . $nom = range(1, 7);
 	echo '<hr>';
 
 }
@@ -182,10 +182,12 @@ public function stringExpo ($odd) {
 
 }
 
-public function arrayFill ($dig) {
+public function arrayFill ($abc) {
 	echo '<h1>Array Fill function</h1>';
 	echo 'Print: ';
-	echo 'This returns an array filled with four elements: ' . $dig = array_fill(0, 4, 9);
+	echo 'This returns an array filled with four elements:'<br>;
+	$abc = array_fill(1, 4, 9);
+	print_r($abc);
 	echo '<hr>';
 
 }
