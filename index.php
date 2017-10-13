@@ -18,7 +18,7 @@ $names = array('first' => 'Abraham', 'last' => 'Lincoln');
 $nom = range(1, 7);
 $name = lcfirst($name);
 $abc = array_fill(1, 4, 9);
-$home = 'Door|Roof|Deck|Yard';
+$home = "I have doors, windows and a roof in my home.";
 
 $obj->printString($textInput);
 $obj->stringLength($textInput);
@@ -39,7 +39,7 @@ $obj->arraySort ($books);
 $obj->stringExpo ($odd);
 $obj->arrayFill ($abc);
 $obj->stringConvo ($home);
-$obj->arrayMerge ($result);
+$obj->arrayMerge ($books);
  
 class main {
 
@@ -201,17 +201,19 @@ public function arrayFill ($abc) {
 public function stringConvo ($home) {
 	echo '<h1>String to an array function</h1>';
 	echo 'Print: ';
-	echo 'This string converts to an array: ';  $home = explode('|', $home);
-	$home1 = $home[1];
-	$home2 = $home[3];
+	echo 'This string converts to an array: ';
+	$home = "I have doors, windows and a roof in my home.";
+	print_r(explode(" ", $home));
 	echo '<hr>';
 }
 
-public function arrayMerge ($result) {
+public function arrayMerge ($books) {
 	echo '<h1>Merge two Arrays function</h1>';
 	echo 'Print: ';
 	echo 'This will merge two arrays to one: ';
-	print_r(array_merge($books, $maga_zine)); 
+	$books = array('title', 'content', 'author');
+	$maga_zine = array('Time', 'Newsweek', 'Money');
+	print_r(array_merge($books,$maga_zine)); 
 	echo '<hr>';
 }
 
