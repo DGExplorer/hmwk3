@@ -7,7 +7,7 @@ $obj = new main();
 $num = array('2', '4', '6', '8');
 $sum = array_sum($num);
 $books = array('title', 'content', 'author');
-$mags = array('Time', 'Newsweek', 'Money');
+$maga_zine = array('Time', 'Newsweek', 'Money');
 $dog = <<<WALKERS
 'There are not enough treats for canines!'
 WALKERS;
@@ -39,7 +39,7 @@ $obj->arraySort ($books);
 $obj->stringExpo ($odd);
 $obj->arrayFill ($abc);
 $obj->stringConvo ($home);
-$obj->arrayMerge ($books);
+$obj->arrayMerge ($result);
  
 class main {
 
@@ -207,12 +207,11 @@ public function stringConvo ($home) {
 	echo '<hr>';
 }
 
-public function arrayMerge ($books) {
+public function arrayMerge ($result) {
 	echo '<h1>Merge two Arrays function</h1>';
 	echo 'Print: ';
 	echo 'This will merge two arrays to one: ';
-	$books = array_merge($books, $mags);
-	print_r($books); 
+	print_r(array_merge($books, $maga_zine)); 
 	echo '<hr>';
 }
 
