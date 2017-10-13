@@ -7,6 +7,7 @@ $obj = new main();
 $num = array('2', '4', '6', '8');
 $sum = array_sum($num);
 $books = array('title', 'content', 'author');
+$mags = array('Time', 'Newsweek', 'Money');
 $dog = <<<WALKERS
 'There are not enough treats for canines!'
 WALKERS;
@@ -17,6 +18,7 @@ $names = array('first' => 'Abraham', 'last' => 'Lincoln');
 $nom = range(1, 7);
 $name = lcfirst($name);
 $abc = array_fill(1, 4, 9);
+$home = 'Door|Roof|Deck|Yard';
 
 $obj->printString($textInput);
 $obj->stringLength($textInput);
@@ -36,6 +38,8 @@ $obj->stringLower ($name);
 $obj->arraySort ($books);
 $obj->stringExpo ($odd);
 $obj->arrayFill ($abc);
+$obj->stringConvo ($home);
+$obj->arrayMerge ($books);
  
 class main {
 
@@ -153,7 +157,9 @@ public function stringSubstring ($name) {
 public function arrayRange ($nom) {
 	echo '<h1>Array Range Values function</h1>';
 	echo 'Print: ';
-	echo 'This array has a range of values: ' . $nom = range(1, 7);
+	echo 'This array has a range of values up to 7: '; 
+	$nom = range(1, 7);
+	print_r($nom); 
 	echo '<hr>';
 
 }
@@ -185,14 +191,31 @@ public function stringExpo ($odd) {
 public function arrayFill ($abc) {
 	echo '<h1>Array Fill function</h1>';
 	echo 'Print: ';
-	echo 'This returns an array filled with four elements:'<br>;
+	echo 'This returns an array filled with four elements: ';
 	$abc = array_fill(1, 4, 9);
-	print_r($abc);
+	print_r($abc); 
 	echo '<hr>';
 
 }
 
-	
+public function stringConvo ($home) {
+	echo '<h1>String to an array function</h1>';
+	echo 'Print: ';
+	echo 'This string converts to an array: ';  $home = explode('|', $home);
+	$home1 = $home[1];
+	$home2 = $home[3];
+	echo '<hr>';
+}
+
+public function arrayMerge ($books) {
+	echo '<h1>Merge two Arrays function</h1>';
+	echo 'Print: ';
+	echo 'This will merge two arrays to one: ';
+	$books = array_merge($books, $mags);
+	print_r($books); 
+	echo '<hr>';
+}
+
 public function __destruct() {
 
 }
