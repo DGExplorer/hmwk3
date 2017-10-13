@@ -14,6 +14,9 @@ $comment = "This is a\nmulti-line string.";
 $odd = 16;
 $name = 'President Abraham Lincoln';
 $names = array('first' => 'Abraham', 'last' => 'Lincoln');
+$nom = range(2, 2);
+$name = lcfirst($name);
+$dig = array_fill(0, 4, 9);
 
 $obj->printString($textInput);
 $obj->stringLength($textInput);
@@ -28,7 +31,11 @@ $obj->arraySetaValue ($num);
 $obj->stringSpace ($name);
 $obj->arraySpecKey ($names);
 $obj->stringSubstring ($name);
-$obj->arrayFill ($nom);
+$obj->arrayRange ($nom);
+$obj->stringLower ($name);
+$obj->arraySort ($books);
+$obj->stringExpo ($odd);
+$obj->arrayFill ($dig);
  
 class main {
 
@@ -143,13 +150,46 @@ public function stringSubstring ($name) {
 
 }
 
-public function arrayFill ($nom) {
+public function arrayRange ($nom) {
 	echo '<h1>Array Range Values function</h1>';
 	echo 'Print: ';
 	echo 'This array has a range of values: ' . $nom = range(2, 2);
 	echo '<hr>';
 
 }
+
+public function stringLower ($name) {
+	echo '<h1>String Capitalization function</h1>';
+	echo 'Print: ';
+	echo 'This string returns a lower case on the first word: ' . lcfirst($name);
+	echo '<hr>';
+
+}
+
+public function arraySort ($books) {
+	echo '<h1>Array Sort function</h1>';
+	echo 'Print: ';
+	echo 'This array will sort in ascending order: ' . sort($books);
+	echo '<hr>';
+
+}
+
+public function stringExpo ($odd) {
+	echo '<h1>String Exponents function</h1>';
+	echo 'Print: ';
+	echo 'This string will add the power of 3 to 16:  ' . $power = pow($odd, 3);
+	echo '<hr>';
+
+}
+
+public function arrayFill ($dig) {
+	echo '<h1>Array Fill function</h1>';
+	echo 'Print: ';
+	echo 'This returns an array filled with four elements: ' . $dig = array_fill(0, 4, 9);
+	echo '<hr>';
+
+}
+
 	
 public function __destruct() {
 
